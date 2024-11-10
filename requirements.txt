@@ -2,3 +2,5 @@ Flask
 groq    # Adjust this to the actual version if known
 Pillow
 gunicorn
+
+flask-cors
