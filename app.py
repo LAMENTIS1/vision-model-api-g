@@ -4,8 +4,12 @@ from groq import Groq
 import os
 from io import BytesIO
 from PIL import Image
+from flask_cors import CORS  # Import CORS from flask_cors
 
 app = Flask(__name__)
+
+# Enable CORS for all routes in the application
+CORS(app)
 
 # Initialize Groq API client with your API key
 client = Groq(api_key="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")
